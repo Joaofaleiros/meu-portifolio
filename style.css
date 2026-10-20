@@ -416,3 +416,10 @@ header.cabecalho {
     text-align: center;
   }
 }
+
+/* Corrige a visibilidade dos textos da seção de projetos */
+#projetos > p,
+#projetos .projeto p {
+  color: #333333;
+  line-height: 1.7;
+}
