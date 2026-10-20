@@ -94,22 +94,44 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Habilidades em cartões */
-#habilidades ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+/* Cartões de habilidades */
+#habilidades .lista-habilidades {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   list-style: none;
   padding: 0;
 }
 
-#habilidades li {
-  background-color: #e8eef7;
-  color: #14213d;
-  padding: 10px 18px;
+#habilidades .lista-habilidades li {
+  background-color: #f4f7fb;
+  border: 1px solid #dce5f0;
+  border-left: 4px solid #70d6ff;
+  padding: 18px;
   border-radius: 8px;
-  font-weight: bold;
-  margin-bottom: 0;
+  margin: 0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#habilidades .lista-habilidades li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(20, 33, 61, 0.1);
+}
+
+#habilidades .lista-habilidades strong {
+  display: block;
+  color: #14213d;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#habilidades .lista-habilidades p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Cartão individual de projeto */
@@ -152,4 +174,160 @@ html {
 
 .botao-projeto:hover {
   background-color: #263b65;
+}
+
+/* Cabeçalho profissional */
+header.cabecalho {
+  background: linear-gradient(135deg, #0b132b, #1c3157);
+  color: white;
+  text-align: center;
+  padding: 80px 25px;
+  border-bottom: 4px solid #70d6ff;
+}
+
+.cabecalho .saudacao {
+  color: #70d6ff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cabecalho h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.cabecalho h2 {
+  color: #70d6ff;
+  font-size: 24px;
+  margin: 10px 0 20px;
+}
+
+.cabecalho .descricao {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* Agrupamento dos botões */
+.cabecalho .botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Estilo geral dos botões */
+.cabecalho .botao {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Botão principal */
+.cabecalho .botao-principal {
+  background-color: #70d6ff;
+  color: #0b132b;
+}
+
+.cabecalho .botao-principal:hover {
+  background-color: #a4e7ff;
+  transform: translateY(-3px);
+}
+
+/* Botão secundário */
+.cabecalho .botao-secundario {
+  border: 2px solid #70d6ff;
+  color: white;
+}
+
+.cabecalho .botao-secundario:hover {
+  background-color: #70d6ff;
+  color: #0b132b;
+  transform: translateY(-3px);
+}
+
+/* Tecnologias utilizadas no projeto */
+.tecnologias-projeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.tecnologias-projeto span {
+  background-color: #e8eef7;
+  color: #14213d;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Ajustes para celulares e telas pequenas */
+@media (max-width: 600px) {
+  /* Menu de navegação */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 10px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Cabeçalho */
+  header.cabecalho {
+    padding: 55px 18px;
+  }
+
+  .cabecalho h1 {
+    font-size: 32px;
+  }
+
+  .cabecalho h2 {
+    font-size: 21px;
+  }
+
+  .cabecalho .descricao {
+    font-size: 15px;
+  }
+
+  /* Botões do cabeçalho */
+  .cabecalho .botoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cabecalho .botao {
+    text-align: center;
+  }
+
+  /* Conteúdo principal */
+  main {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  main section {
+    padding: 20px;
+  }
+
+  /* Habilidades em uma coluna */
+  #habilidades .lista-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cartão de projeto */
+  .projeto {
+    padding: 16px;
+  }
 }
