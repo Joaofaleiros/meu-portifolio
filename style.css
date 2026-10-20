@@ -423,3 +423,19 @@ header.cabecalho {
   color: #333333;
   line-height: 1.7;
 }
+
+/* Garante a visibilidade do texto da seção Sobre mim */
+#sobre p {
+  color: #333333;
+  line-height: 1.7;
+}
+/* Garante a visibilidade do texto da seção Habilidades */
+#habilidades > p {
+  color: #333333;
+  line-height: 1.7;
+}
+/* Garante a visibilidade do texto da seção Contato */
+#contato > p {
+  color: #333333;
+  line-height: 1.7;
+}
