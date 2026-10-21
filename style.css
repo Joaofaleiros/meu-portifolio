@@ -141,6 +141,15 @@ html {
   border-radius: 8px;
   border: 1px solid #e0e5eb;
   margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(20, 33, 61, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(20, 33, 61, 0.12);
 }
 
 .projeto h3 {
@@ -148,33 +157,28 @@ html {
   margin-top: 0;
 }
 
-/* Efeito ao passar o mouse no projeto */
-.projeto {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.projeto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(20, 33, 61, 0.12);
-}
-
 /* Botão do projeto */
 .botao-projeto {
   display: inline-block;
   margin-top: 10px;
+  margin-right: 6px;
   padding: 10px 16px;
   background-color: #14213d;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: 1px solid #14213d;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .botao-projeto:hover {
   background-color: #263b65;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(20, 33, 61, 0.2);
 }
 
 /* Cabeçalho profissional */
@@ -264,9 +268,18 @@ header.cabecalho {
   background-color: #e8eef7;
   color: #14213d;
   padding: 6px 12px;
+  border: 1px solid #d5dfed;
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.tecnologias-projeto span:hover {
+  background-color: #dbe6f5;
+  transform: translateY(-2px);
 }
 
 /* Ajustes para celulares e telas pequenas */
