@@ -454,3 +454,13 @@ header.cabecalho {
   margin: 0 auto 15px;
   display: block;
 }
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .imagem-projeto {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
