@@ -140,6 +140,7 @@ html {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #e0e5eb;
+  margin-bottom: 30px;
 }
 
 .projeto h3 {
@@ -438,4 +439,18 @@ header.cabecalho {
 #contato > p {
   color: #333333;
   line-height: 1.7;
+}
+
+/* Imagem de apresentação dos projetos */
+
+/* Imagem de apresentação dos projetos */
+
+.imagem-projeto {
+  width: 100%;
+  max-width: 450px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0 auto 15px;
+  display: block;
 }
