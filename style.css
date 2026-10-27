@@ -140,11 +140,14 @@ html {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #e0e5eb;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   box-shadow: 0 2px 6px rgba(20, 33, 61, 0.06);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+}
+.projeto + .projeto {
+  margin-top: 40px;
 }
 
 .projeto:hover {
